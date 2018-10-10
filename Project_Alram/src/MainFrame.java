@@ -54,10 +54,10 @@ public class MainFrame extends JFrame implements ActionListener {
 
 	addDial dial;
 
-	public MainFrame() {
+	public MainFrame() throws IOException {
 		super("Alram Project in KB국민카드");
 
-		createMenu();
+		CreateMenu();
 
 		addBtn = new JButton("추가");
 		modBtn = new JButton("수정");
@@ -200,6 +200,12 @@ class addDial extends JDialog implements ActionListener{
 	JButton addBtn = new JButton("등록");
 	
 	public addDial(String str) {
+		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
 		
 	}
 	
